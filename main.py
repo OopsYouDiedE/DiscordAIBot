@@ -34,22 +34,20 @@ logging.basicConfig(
 logger = logging.getLogger('discord_bot')
 
 # 机器人配置
-TOKEN = os.getenv('DISCORD_TOKEN', 'your_discord_token')
+TOKEN = os.getenv('DISCORD_TOKEN')
 PREFIX = '!'
 MEMORY_FILE = 'memory.json'
 CONVERSATION_HISTORY_FILE = 'conversation_history.json'
 
 # LLM配置
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY",
-                           "sk-18698dad216d4616bbcbbd7f3c4af772")  # 替换为你的API密钥
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")  # 替换为你的API密钥
 OPENAI_BASE_URL = os.getenv(
     "OPENAI_BASE_URL", "https://dashscope.aliyuncs.com/compatible-mode/v1")
 LLM_MODEL = os.getenv("LLM_MODEL", "deepseek-v3")
 
 # Google搜索配置
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY",
-                           "AIzaSyD63EJ1EetpF-YpArRbnEQTdhY0tFSr7c4")
-GOOGLE_CX = os.getenv("GOOGLE_CX", "66bc4c712323a4d9c")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_CX = os.getenv("GOOGLE_CX")
 
 # 初始化机器人
 intents = discord.Intents.all()
