@@ -2,7 +2,10 @@
 name = "python-template"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+license = {text = "MIT"}
 requires-python = ">=3.11"
 dependencies = [
     "discord-py>=2.5.0",
